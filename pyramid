@@ -1,0 +1,21 @@
+#include<stdio.h>
+main(){
+	int n,i,j,k,l,a=0;
+	printf("enetr the value of n:");
+	scanf("%d",&n);
+	for(l=2;l<n;l++){
+		if(l%2==0){
+			a++;
+		}
+	}
+
+	for(i=1;i<=n-a;i++){
+		for(j=n-i;j>0;j--){
+			printf(" ");
+		}	
+		for(k=1;k<=2*i-1;k++){
+			printf("*");
+		}
+		printf("\n");
+    }
+}
