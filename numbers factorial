@@ -1,0 +1,10 @@
+#include<stdio.h>
+main(){
+	long int num,i,factorial=1;
+	printf("enetr the number that you want to know factorial value:");
+	scanf("%d",&num);
+	for(i=num;i>0;i--){
+		factorial*=i;
+	}
+	printf("the factorial value is=%ld",factorial);
+}
